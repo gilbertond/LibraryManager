@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="487.0" prefWidth="758.0" 
+      xmlns="http://javafx.com/javafx/8" stylesheets="@bootstrap2.css" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Login">
+	<children>
+		<GridPane styleClass="info" layoutX="114.0" layoutY="194.0" prefHeight="197.0" prefWidth="563.0">
+			<columnConstraints>
+				<ColumnConstraints hgrow="SOMETIMES" maxWidth="374.0" minWidth="10.0" prefWidth="337.0" />
+				<ColumnConstraints hgrow="SOMETIMES" maxWidth="421.0" minWidth="10.0" prefWidth="421.0" />
+			</columnConstraints>
+			<rowConstraints>
+				<RowConstraints maxHeight="135.0" minHeight="10.0" prefHeight="59.0" vgrow="SOMETIMES" />
+				<RowConstraints maxHeight="166.0" minHeight="10.0" prefHeight="58.0" vgrow="SOMETIMES" />
+				<RowConstraints maxHeight="182.0" minHeight="10.0" prefHeight="88.0" vgrow="SOMETIMES" />
+			</rowConstraints>
+			<children>
+				<Label alignment="CENTER" prefHeight="27.0" prefWidth="210.0" text="Login : " />
+				<TextField fx:id="login" prefHeight="31.0" prefWidth="338.0" text="Insert login" GridPane.columnIndex="1" />
+				<Label alignment="CENTER" prefHeight="27.0" prefWidth="255.0" text="Password : " GridPane.rowIndex="1" />
+				<Pane prefHeight="128.0" prefWidth="244.0" GridPane.rowIndex="2" />
+      				<Pane prefHeight="44.0" prefWidth="318.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+      					<children>
+      						<Button styleClass="primary"  fx:id="cancel" layoutX="101.0" layoutY="21.0" mnemonicParsing="false" onAction="#onCancel" prefHeight="31.0" prefWidth="82.0" text="Cancel" />
+						<Button styleClass="primary" fx:id="submit" layoutX="-41.0" layoutY="22.0" mnemonicParsing="false" onAction="#onSubmit" onKeyPressed="#onSubmit" prefHeight="30.0" prefWidth="111.0" text="Login" />
+      					</children>
+      				</Pane>
+				<PasswordField fx:id="password" prefHeight="32.0" prefWidth="328.0" promptText="*********" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+			</children>
+		</GridPane>
+		<Label alignment="CENTER" contentDisplay="CENTER" layoutX="7.0" layoutY="108.0" prefHeight="77.0" prefWidth="743.0" text="Log In">
+			<font>
+				<Font size="24.0" />
+			</font>
+		</Label>
+		<Label fx:id="message" alignment="CENTER_RIGHT" layoutX="63.0" layoutY="391.0" prefHeight="64.0" prefWidth="681.0" />
+	</children>
+</Pane>

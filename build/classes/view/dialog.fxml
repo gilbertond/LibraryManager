@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="291.0" prefWidth="298.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MessageController">
+   <children>
+      <TitledPane animated="false" layoutX="44.0" layoutY="31.0" prefHeight="166.0" prefWidth="210.0" text="Message">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="2.0" prefWidth="118.0">
+               <children>
+                  <Label layoutX="54.0" layoutY="53.0" text="Successifully saved" textFill="#1804cd" />
+                  <Button fx:id="closeButton" layoutX="82.0" layoutY="101.0" mnemonicParsing="false" text="Close" />
+               </children>
+            </AnchorPane>
+        </content>
+      </TitledPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="733.0" prefWidth="775.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Author">
+	<content>
+		<Pane prefHeight="727.0" prefWidth="773.0">
+			<children>
+				<TableView fx:id="books" layoutX="12.0" layoutY="356.0" prefHeight="338.0" prefWidth="749.0">
+					<columns>
+						<TableColumn fx:id="isbn" editable="false" prefWidth="117.0" text="ISBN" />
+						<TableColumn fx:id="title" prefWidth="649.0" text="Title" />
+					</columns>
+				</TableView>
+				<Button fx:id="back" layoutX="14.0" layoutY="29.0" mnemonicParsing="false" onAction="#onBack" prefHeight="31.0" prefWidth="159.0" text="Back" />
+				<Label fx:id="firstName" layoutX="57.0" layoutY="108.0" prefHeight="26.0" prefWidth="220.0" text="N/A" />
+				<Label fx:id="phone" layoutX="57.0" layoutY="153.0" prefHeight="31.0" prefWidth="207.0" text="N/A" />
+				<Label fx:id="credentials" layoutX="345.0" layoutY="187.0" prefHeight="161.0" prefWidth="412.0" text="N/A" />
+				<Label fx:id="lastName" layoutX="345.0" layoutY="108.0" prefHeight="26.0" prefWidth="220.0" text="N/A" />
+            <Label fx:id="adresse" layoutX="57.0" layoutY="187.0" prefHeight="161.0" prefWidth="248.0" text="N/A" />
+            <Pane layoutX="490.0" layoutY="14.0" prefHeight="107.0" prefWidth="252.0" />
+			</children>
+		</Pane>
+	</content>
+</ScrollPane>
